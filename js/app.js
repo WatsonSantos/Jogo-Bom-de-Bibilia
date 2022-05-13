@@ -184,7 +184,7 @@ function perguntas(){
     document.getElementById("texto").style.display="block"
     document.getElementById("bt").style.display="none"
     document.getElementById("bt3").style.display="none"
-    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia 1.0: Teste seus conecimentos |"
+    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia 1.0 |"
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.style.display="block"
     
@@ -241,7 +241,7 @@ function comecar(){
 
 function recomecar(){
     ponteiro = 0
-    document.getElementById("bt3").innerHTML="Abrindo..."
+    document.getElementById("bt2").innerHTML="Abrindo..."
     setTimeout(perguntas, 2000)
 }
 
@@ -264,7 +264,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas,6000)
+        setTimeout(perguntas,7000)
                       
     }else{
         document.getElementById("resultado").innerHTML="A sua resposta está errada! Resposta certa: "+listaPergunta[ponteiro].certo
@@ -274,7 +274,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas, 6000)
+        setTimeout(perguntas, 7000)
                 
             }
 

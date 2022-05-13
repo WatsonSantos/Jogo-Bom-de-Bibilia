@@ -1,4 +1,16 @@
 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 #resultado{
      transition: 1s; 
@@ -9,7 +21,7 @@
 }
 
 .display{
-    transition: 0.5s;
+
     width: 80% ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
@@ -20,26 +32,23 @@
 @keyframes sair{
 
     0%{
-        opacity: 0.3;   
+        opacity: 0.8;
+
     }
-    25%{
-        opacity: 0.7;
-      
-    }
+
+   
     50%{
 
         opacity: 1;
          
     }
-    75%{
 
-        opacity: 0.8;   
-        
-    }
     90%{
-      opacity: 0.5;
+
+        opacity: 1;
 
     }
+
     100%{
         opacity: 0;
     }
@@ -47,5 +56,5 @@
 }
 
 .move{
-    animation: sair 6s  ease;
+    animation: sair 7s  ease;
 }

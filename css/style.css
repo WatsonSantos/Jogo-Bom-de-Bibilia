@@ -1,113 +1,51 @@
-*{
-    margin: 0;
-    padding:0;
-    font-family:'Courier New', Courier, monospace;
-    list-style: none;
-    text-decoration: none;
-    color: #FFF;
-}
 
 
-body{
-    background-color:#333;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#resultado{
+     transition: 1s; 
+     position: absolute;  
+     margin-top: 60px; 
+     opacity: 0;
 
 }
 
-
-
-h1{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    color: rgba(183, 183, 164, 1);
-    
-}
-
-.card{
-    
-    background:transparent;
-    width: 45%;
-    height: 60%;
-    margin-top: 50px;
-    border-radius: 5%;
-    padding: 10px;
+.display{
+    transition: 0.5s;
+    width: 80% ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    font-weight: 600; 
     text-align: center;
-    border: 3px solid #FFF;
-    
 }
 
-.card h2{
-    margin-bottom: 40px;
-    margin-top: 25px;
-    color: #FFF;
+@keyframes sair{
+
+    0%{
+        opacity: 0.3;   
+    }
+    25%{
+        opacity: 0.7;
+      
+    }
+    50%{
+
+        opacity: 1;
+         
+    }
+    75%{
+
+        opacity: 0.8;   
+        
+    }
+    90%{
+      opacity: 0.5;
+
+    }
+    100%{
+        opacity: 0;
+    }
+
 }
 
-input[type="radio"]{
-    accent-color: #FF0;
-}
-
-.respostas{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-.respostas label{
-    margin-right: 50px;
-}
-
-.respostas input[type = "radio"]{
-    margin-right:10px;
-}
-
-#bt {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    width: 100px;
-    height: 50px;
-    color: #FFF;
-    background: transparent;
-    box-sizing: border-box;
-    border: none;
-    border: 2px solid #FFF;
-    border-radius: 5px;
-    transition: 0.9s;
-}
-
-#bt2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    width: 100px;
-    height: 50px;
-    color:red;
-    background: transparent;
-    box-sizing: border-box;
-    border: none;
-    border: 3px solid #FFF;
-    border-radius: 5px;
-    transition: 0.9s;
-    display: none;
-    margin-left: 45%;
-}
-
-#bt:hover{
-    background-color:rgb(36, 36, 36);
-    border: 2px solid #FF0;
-    box-shadow:red;
-}
-
-#bt2:hover{
-    background-color:rgb(36, 36, 36) ;
-    border: 2px solid #FF0;
+.move{
+    animation: sair 6s  ease;
 }

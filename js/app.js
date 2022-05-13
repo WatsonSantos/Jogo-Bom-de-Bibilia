@@ -174,9 +174,7 @@ document.querySelectorAll(".resposta").forEach(function(item, inice){
 //Função de troca das perguntas e respostas
 
 function perguntas(){ 
-    
     document.getElementById("resultado").removeAttribute("class")
-    document.getElementById("resultado").innerHTML=""
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.disabled = false
     })
@@ -186,7 +184,7 @@ function perguntas(){
     document.getElementById("texto").style.display="block"
     document.getElementById("bt").style.display="none"
     document.getElementById("bt3").style.display="none"
-    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia: Teste seus conecimentos |"
+    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia 1.0: Teste seus conecimentos |"
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.style.display="block"
     
@@ -237,14 +235,14 @@ function perguntas(){
 
 function comecar(){
     document.getElementById("bt3").innerHTML="Abrindo..."
-    setTimeout(perguntas,3000)
+    setTimeout(perguntas, 2000)
 }
 
 
 function recomecar(){
     ponteiro = 0
     document.getElementById("bt3").innerHTML="Abrindo..."
-    setTimeout(perguntas,3000)
+    setTimeout(perguntas, 2000)
 }
 
 
@@ -260,23 +258,23 @@ function enviar(resposta){
 
     if(resposta ==  listaPergunta[ponteiro].certo){
         document.getElementById("resultado").innerHTML="A sua resposta está correcta!"
-        document.getElementById("resultado").setAttribute("class","alert alert-success")
+        document.getElementById("resultado").setAttribute("class","alert alert-success display move")
         resCerta = resCerta+1
         ponteiro = ponteiro+1
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas,3000)
+        setTimeout(perguntas,6000)
                       
     }else{
         document.getElementById("resultado").innerHTML="A sua resposta está errada! Resposta certa: "+listaPergunta[ponteiro].certo
-        document.getElementById("resultado").setAttribute("class","alert alert-danger")
+        document.getElementById("resultado").setAttribute("class","alert alert-danger display move")
         resErrada = resErrada+1
         ponteiro = ponteiro+1
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas,3000)
+        setTimeout(perguntas, 6000)
                 
             }
 

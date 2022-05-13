@@ -274,7 +274,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas, 7000)
+        setTimeout(perguntas, 6000)
                 
             }
 

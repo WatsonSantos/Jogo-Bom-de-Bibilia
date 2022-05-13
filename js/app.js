@@ -4,7 +4,7 @@ let pergunta1 = {
     opc2: "B) Jacó",
     opc3: "C) Noé",
     opc4: "D) Abrão",
-    certo:"B)"
+    certo:"B) Jacó"
 }
 
 let pergunta2 ={
@@ -13,7 +13,7 @@ let pergunta2 ={
     opc2: "B) Saulo",
     opc3: "C) Pedro",
     opc4: "D) Jonas",
-    certo: "D)"
+    certo: "D) Jonas"
 }
 
 let pergunta3 ={
@@ -22,7 +22,7 @@ let pergunta3 ={
     opc2: "B) 1 ano e 1 dia",
     opc3: "C) 30 dias e 30 noites",
     opc4: "D) 40 dias e 40 noites",
-    certo: "D)"
+    certo: "D) 40 dias e 40 noites"
 }
 
 let pergunta4 ={
@@ -31,7 +31,7 @@ let pergunta4 ={
     opc2: "B) Moisés, Jesué e Calebe",
     opc3: "C) O povo do Egito",
     opc4: "D) Os filhos do povo que saiu do egito",
-    certo: "D)"
+    certo: "D) Os filhos do povo que saiu do egito"
 }
 
 let pergunta5 ={
@@ -40,7 +40,7 @@ let pergunta5 ={
     opc2: "B) Noé, viveu 990 anos",
     opc3: "C) Matusalém, viveu 969 anos",
     opc4: "D) Rainha Ester, viveu 859 anos",
-    certo: "C)"
+    certo: "C) Matusalém, viveu 969 anos"
 }
 
 
@@ -50,7 +50,7 @@ let pergunta6 ={
     opc2: "B) Abraão",
     opc3: "C) Jacó",
     opc4: "D) Sara",
-    certo: "A)"
+    certo: "A) Davi"
 }
 
 let pergunta7 ={
@@ -59,7 +59,7 @@ let pergunta7 ={
     opc2: "B) Foi escondido dentro de uma caverna",
     opc3: "C) Foi colocado num cesto e lançado no rio",
     opc4: "D) Foi levado ao templo para servir a Deus",
-    certo: "C)"
+    certo: "C) Foi colocado num cesto e lançado no rio"
 }
 
 
@@ -69,7 +69,7 @@ let pergunta8 ={
     opc2: "B) Mateus e Marcos",
     opc3: "C) Hebreus e Apocalipse",
     opc4: "D) Mateus e Lucas",
-    certo: "D)"
+    certo: "D) Mateus e Lucas"
 }
 
 let pergunta9 ={
@@ -78,7 +78,7 @@ let pergunta9 ={
     opc2: "B) 1 casal",
     opc3: "C) 6 casais",
     opc4: "D) 3 casais",
-    certo: "A) 4"
+    certo: "A) 4 casais"
 }
 
 let pergunta10 ={
@@ -87,7 +87,7 @@ let pergunta10 ={
     opc2: "B) 30 moedas de prata",
     opc3: "C) 50 moedas de prata",
     opc4: "D) 30 moedas de ouro",
-    certo: "B)"
+    certo: "B) 30 moedas de prata"
 }
 
 let pergunta11 ={
@@ -96,7 +96,7 @@ let pergunta11 ={
     opc2: "B) Miriã e Arão",
     opc3: "C) Josué e Calebe",
     opc4: "D) Priscila e Áquila",
-    certo: "B)"
+    certo: "B) Miriã e Arão"
 }
 
 
@@ -106,7 +106,7 @@ let pergunta12 ={
     opc2: "B) 37 livros",
     opc3: "C) 66 livros",
     opc4: "D) 100 livros",
-    certo: "C)"
+    certo: "C) 66 livros"
 }
 
 
@@ -116,7 +116,7 @@ let pergunta13 ={
     opc2: "B) 2 partes: Antigo Testamento e Novo Testamento",
     opc3: "C) 3 partes: Velho Testamento, Salmos e Novo Testamento",
     opc4: "D) 2 partes: Livros da Lei e Apocalipse",
-    certo: "B)"
+    certo: "B) 2 partes: Antigo Testamento e Novo Testamento"
 }
 
 
@@ -127,7 +127,7 @@ let pergunta14 ={
     opc2: "B) Ester 8:9",
     opc3: "C) Êxodo 20:13",
     opc4: "D) Jó 3:2",
-    certo: "D)"
+    certo: "D) Jó 3:2"
 }
 
 
@@ -137,7 +137,7 @@ let pergunta15 ={
     opc2: "B) Amar a Deus sobre todas as coisas e amar ao próximo como a si mesmo.",
     opc3: "C) Obedecer a Deus cumprindo os 10 mandamentos e batizar",
     opc4: "D) Buscar o Reino de Deus e fazer justiça",
-    certo: "B)"
+    certo: "B) Amar a Deus sobre todas as coisas e amar ao próximo como a si mesmo."
 }
 
 

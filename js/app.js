@@ -264,7 +264,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas,7000)
+        setTimeout(perguntas,5000)
                       
     }else{
         document.getElementById("resultado").innerHTML="A sua resposta está errada! Resposta certa: "+listaPergunta[ponteiro].certo
@@ -274,7 +274,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas, 6000)
+        setTimeout(perguntas, 5000)
                 
             }
 

@@ -234,14 +234,14 @@ function perguntas(){
 }
 
 function comecar(){
-    document.getElementById("bt3").innerHTML="Abrindo..."
+    document.getElementById("bt3").innerHTML="Abrindo...."
     setTimeout(perguntas, 2000)
 }
 
 
 function recomecar(){
     ponteiro = 0
-    document.getElementById("bt2").innerHTML="Abrindo..."
+    document.getElementById("bt2").innerHTML="Abrindo...."
     setTimeout(perguntas, 2000)
 }
 

@@ -177,10 +177,6 @@ document.querySelectorAll(".resposta").forEach(function(item, inice){
 function perguntas(){ 
     document.getElementById("resultado").removeAttribute("class")
     document.querySelectorAll(".resposta").forEach(function(item, inice){
-        item.classList.remove('active') //removendo a classe active do butão
-    
-    })
-    document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.disabled = false
     })
     let quantAtual = ponteiro+1
@@ -209,6 +205,11 @@ function perguntas(){
         perg.innerHTML ="Parabéns! Você terminou o desafio. "+" Resultado: "+resCerta+"/"+listaPergunta.length
         document.getElementById("bt").style.display = "none"
         document.getElementById("bt2").style.display="block"
+
+        //wins
+        let confettiSettings = { target: 'my-canvas' };
+        let confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
 
             
         } 

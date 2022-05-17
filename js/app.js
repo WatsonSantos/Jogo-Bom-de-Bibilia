@@ -171,10 +171,15 @@ document.querySelectorAll(".resposta").forEach(function(item, inice){
 
 
 
+
 //Função de troca das perguntas e respostas
 
 function perguntas(){ 
     document.getElementById("resultado").removeAttribute("class")
+    document.querySelectorAll(".resposta").forEach(function(item, inice){
+        item.classList.remove('active') //removendo a classe active do butão
+    
+    })
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.disabled = false
     })

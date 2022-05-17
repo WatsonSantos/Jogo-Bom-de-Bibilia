@@ -184,7 +184,7 @@ function perguntas(){
     document.getElementById("texto").style.display="block"
     document.getElementById("bt").style.display="none"
     document.getElementById("bt3").style.display="none"
-    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia 1.0 |"
+    document.getElementById("texto").innerHTML=quantAtual+"/"+quantPergunta+" | Bom de bibilia 1.5 |"
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.style.display="block"
     

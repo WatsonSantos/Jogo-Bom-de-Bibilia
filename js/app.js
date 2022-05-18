@@ -147,7 +147,7 @@ let listaPergunta = [pergunta1, pergunta2, pergunta3, pergunta4, pergunta5, perg
     pergunta8,pergunta9, pergunta10, pergunta11, pergunta12, pergunta13, pergunta14, pergunta15
 ]
 
-
+let confetti
 let ponteiro = 0
 
 let resCerta = 0
@@ -208,10 +208,9 @@ function perguntas(){
 
         //wins
         let confettiSettings = { target: 'my-canvas' };
-        let confetti = new ConfettiGenerator(confettiSettings);
+        confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();
-
-            
+      
         } 
 
     else {  
@@ -240,15 +239,15 @@ function perguntas(){
 }
 
 function comecar(){
-    document.getElementById("bt3").innerHTML="Abrindo...."
-    setTimeout(perguntas, 2000)
+    setTimeout(perguntas, 600)
+    
 }
 
 
 function recomecar(){
+    confetti.clear();
     ponteiro = 0
-    document.getElementById("bt2").innerHTML="Abrindo...."
-    setTimeout(perguntas, 2000)
+    setTimeout(perguntas, 600)
 }
 
 
@@ -270,7 +269,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas,5000)
+        setTimeout(perguntas,3000)
                       
     }else{
         document.getElementById("resultado").innerHTML="A sua resposta está errada! Resposta certa: "+listaPergunta[ponteiro].certo
@@ -280,7 +279,7 @@ function enviar(resposta){
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
-        setTimeout(perguntas, 5000)
+        setTimeout(perguntas, 3000)
                 
             }
 

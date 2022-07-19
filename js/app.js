@@ -141,14 +141,32 @@ let pergunta15 ={
 }
 
 
-
-
+/*import {pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,pergunta8,pergunta9,pergunta10,
+        pergunta11,pergunta12,pergunta13,pergunta14,pergunta15} from './perguntas'
+*/
 let listaPergunta = [pergunta1, pergunta2, pergunta3, pergunta4, pergunta5, pergunta6, pergunta7,
     pergunta8,pergunta9, pergunta10, pergunta11, pergunta12, pergunta13, pergunta14, pergunta15
 ]
 
+// Lib de confetes
 let confetti
-let ponteiro = 0
+
+//Array para guardar perguntas já soteada
+let perguntasJaSorteadas = []
+
+//Funcção para sortear uma pergunta
+let ponteiro = Math.floor(Math.random()*15)
+
+
+
+
+
+
+
+
+
+//Contador da quantidade de perguntas
+let contador = 0
 
 let resCerta = 0
 let resErrada = 0
@@ -172,6 +190,8 @@ document.querySelectorAll(".resposta").forEach(function(item, inice){
 
 
 
+
+
 //Função de troca das perguntas e respostas
 
 function perguntas(){ 
@@ -179,7 +199,7 @@ function perguntas(){
     document.querySelectorAll(".resposta").forEach(function(item, inice){
         item.disabled = false
     })
-    let quantAtual = ponteiro+1
+    let quantAtual = contador+1
     document.getElementById("titulo").style.display="none"
     document.getElementById("bt2").style.display = "none"
     document.getElementById("texto").style.display="block"
@@ -193,7 +213,7 @@ function perguntas(){
     
     //Final do jogo, mensagem de parabens
     
-    if(ponteiro == listaPergunta.length){
+    if(contador == listaPergunta.length){
         document.getElementById("titulo").style.display="none"
         document.getElementById("texto").style.display="none"
         document.querySelectorAll(".resposta").forEach(function(item, inice){
@@ -246,7 +266,7 @@ function comecar(){
 
 function recomecar(){
     confetti.clear();
-    ponteiro = 0
+    contador = 0
     setTimeout(perguntas, 600)
 }
 
@@ -264,8 +284,14 @@ function enviar(resposta){
     if(resposta ==  listaPergunta[ponteiro].certo){
         document.getElementById("resultado").innerHTML="A sua resposta está correcta!"
         document.getElementById("resultado").setAttribute("class","alert alert-success display move")
+
         resCerta = resCerta+1
-        ponteiro = ponteiro+1
+        contador = contador +1
+        ponteiro = Math.floor(Math.random()*16)
+
+        //alert(ponteiro)
+       
+
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
@@ -275,7 +301,12 @@ function enviar(resposta){
         document.getElementById("resultado").innerHTML="A sua resposta está errada! Resposta certa: "+listaPergunta[ponteiro].certo
         document.getElementById("resultado").setAttribute("class","alert alert-danger display move")
         resErrada = resErrada+1
-        ponteiro = ponteiro+1
+        contador = contador +1
+
+        ponteiro = Math.floor(Math.random()*16)
+    
+        
+        //alert(ponteiro)
         document.querySelectorAll(".resposta").forEach(function(item, inice){
             item.disabled = true
         })
